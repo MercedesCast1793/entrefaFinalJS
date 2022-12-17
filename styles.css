@@ -1,0 +1,145 @@
+
+html {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body{
+    background-color: #f5f7f8;
+    overflow-x: hidden;
+}
+
+/* ----------------
+|      Nav         |
+-------------------*/
+
+nav {
+    background-color:#00C9A7;
+    position: fixed;
+}
+
+.nav-link {
+    background-color:#C4FCEF;
+    border-radius: 10px;
+    color: #333;
+    font-weight: 600;
+}
+
+
+/* ----------------
+|      Header      |
+-------------------*/
+
+header {
+	background: url('./img/fondo3.jpeg');
+	text-align: center;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+	border-radius: 0 0 85% 85% / 25%;
+}
+
+header .overlay{
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+	color: #FFF;
+	text-shadow: 1px 1px 1px #333;
+  background-image: linear-gradient( 135deg, #0048b465 10%, #6494ed63 100%);
+	
+}
+
+h1 {
+	margin-bottom: 30px;
+}
+
+h2, p {
+	margin-bottom: 30px;
+}
+
+
+/* ----------------
+|      Main        |
+-------------------*/
+
+#contenedor{
+    width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding-bottom: 100px;
+  
+}
+
+@media only screen and (min-width: 500px) {
+    #contenedor {
+      grid-template-columns: 1fr 1fr;
+    }  
+  }
+
+  @media only screen and (min-width: 850px) {
+    #contenedor {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+
+.imagen{
+    max-width:100%;
+}
+
+a{
+    cursor:pointer;
+}
+.alerta{
+    font-weight:700;
+}
+
+.modal-contenedor{
+    display:flex;
+    align-items: center;
+    gap:2rem;
+}
+.img-carrito{
+    width:200px;
+    padding:20px;
+} 
+.modal-content{
+    background-color: #f5f7f8;
+}
+.parrafo{
+    font-weight: 700;
+    
+
+}
+#precioTotal{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+}
+.boton{
+    opacity:0;
+}
+
+#procesarCompra {
+    background-color: #00C9A7;
+    color: white;
+}
+
+#btn-compra {
+    background-color: #00C9A7;
+    color: #FFF;
+    font-weight: 600;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+
